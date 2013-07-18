@@ -1,4 +1,6 @@
-package com.laihuythinh.android;
+package main.java.com.laihuythinh.android;
+
+import com.laihuythinh.android.R;
 
 import android.app.Activity;
 import android.os.Bundle;
