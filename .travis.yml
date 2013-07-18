@@ -8,8 +8,7 @@ before_install:
     - tar xzf android-sdk_r21.0.1-linux.tgz
     - export ANDROID_HOME=$PWD/android-sdk-linux
     - export PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/platform-tools
-
     # Install required Android components.
     - android update sdk --filter platform-tools,android-16,extra-android-support,$ANDROID_SDKS --no-ui --force
-
-script: mvn clean test
+    
+script: mvn -Dtest=HelloAndroidActivityTest test
